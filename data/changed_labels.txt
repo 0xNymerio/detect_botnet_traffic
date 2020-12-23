@@ -1,0 +1,163 @@
+# Labels alterados para facilitar a classificação. Todos os backgrounds de botnet foram setados como 'background-botnet' e os de comunicação de botnet como 'botnet'
+
+# Cenario 6
+background - botnet
+	flow=From-Normal-V47-Jist
+	flow=From-Normal-V47-UDP-CVUT-DNS-Server
+	flow=From-Normal-V47-Grill
+	flow=From-Normal-V47-Stribrek
+	flow=From-Normal-V47-MatLab-Server
+	flow=From-Normal-V47-CVUT-WebServer
+	flow=Normal-V47-HTTP-windowsupdate
+
+
+botnet
+	flow=From-Botnet-V47-UDP-DNS
+	flow=From-Botnet-V47-TCP-Established-HTTP-Ad-4
+	flow=From-Botnet-V47-TCP-CC73-Not-Encrypted
+	flow=From-Botnet-V47-TCP-Attempt-SPAM
+	flow=From-Botnet-V47-TCP-Established-HTTP-Ad-62
+	flow=From-Botnet-V47-TCP-Attempt
+	flow=From-Botnet-V47-UDP-Attempt
+
+
+# Cenario 8  
+
+background - botnet
+	flow=From-Normal-V49-Stribrek
+	flow=From-Normal-V49-Grill
+	flow=From-Normal-V49-Jist
+	flow=From-Normal-V49-CVUT-WebServer
+
+botnet
+	flow=From-Botnet-V49-UDP-DNS
+	flow=From-Botnet-V49-TCP-Established-HTTP-Ad-40
+	flow=From-Botnet-V49-TCP-HTTP-Google-Net-Established-6
+	flow=From-Botnet-V49-UDP-Attempt
+	flow=From-Botnet-V49-TCP-Attempt
+	flow=From-Botnet-V49-TCP-WEB-Established
+	flow=From-Botnet-V49-UDP-Established
+	flow=From-Botnet-V49-TCP-Established
+	flow=From-Botnet-V49-TCP-CC76-HTTP-Custom-Port-Not-Encrypted-Binary-Download
+	flow=From-Botnet-V49-TCP-CC74-HTTP-Custom-Port-Not-Encrypted
+	flow=From-Botnet-V49-TCP-CC75-HTTP-Custom-Port-Not-Encrypted-Non-Periodic
+	flow=From-Botnet-V49-TCP-Established-HTTP-Binary-Download-11
+	flow=From-Botnet-V49-TCP-Established-HTTP-Ad-62
+	flow=From-Botnet-V49-UDP-Established-Custom-Encryption-2
+	flow=From-Botnet-V49-UDP-Established-Custom-Encryption-1
+	
+	
+	
+# Abaixo como ficou as alterações e a proporção para o dataset como um todo.
+
+# Cenario 6
+flow=To-Background-UDP-CVUT-DNS-Server    261525
+flow=Background-UDP-Established           128117
+flow=Background-TCP-Established            66424
+flow=Background-Established-cmpgw-CVUT     40960
+flow=Background-UDP-Attempt                14608
+flow=Background                            11632
+flow=To-Background-CVUT-Proxy               8444
+background-botnet                           7472
+botnet                                      4630
+flow=Background-TCP-Attempt                 4179
+flow=Background-Attempt-cmpgw-CVUT          3616
+flow=To-Background-CVUT-WebServer           1034
+flow=Background-UDP-NTP-Established-1        887
+flow=From-Background-CVUT-Proxy              451
+flow=Background-google-analytics2            323
+flow=Background-google-analytics8            320
+flow=Background-google-analytics7            314
+flow=Background-google-analytics3            287
+flow=To-Background-MatLab-Server             283
+flow=Background-google-analytics16           281
+flow=Background-google-webmail               273
+flow=Background-google-analytics13           254
+flow=Background-google-analytics10           243
+flow=Background-google-analytics12           240
+flow=Background-google-analytics5            236
+flow=Background-google-analytics11           229
+flow=Background-google-analytics1            223
+flow=Background-google-analytics6            217
+flow=Background-google-analytics14           209
+flow=Background-google-analytics9            206
+flow=Background-google-analytics4            199
+flow=Background-google-analytics15           173
+flow=Background-ajax.google                  145
+flow=Background-www.fel.cvut.cz              116
+flow=Background-google-pop                    91
+flow=To-Background-Grill                      27
+flow=To-Normal-V47-UDP-NTP-server             22
+flow=To-Background-Jist                       17
+flow=To-Background-Stribrek                   12
+Name: Label, dtype: int64
+
+
+# Cenario 8
+flow=To-Background-UDP-CVUT-DNS-Server             1331472
+flow=Background-UDP-Established                     875967
+flow=Background-TCP-Established                     316366
+flow=Background-Established-cmpgw-CVUT              106864
+background-botnet                                    72574
+flow=Background-UDP-Attempt                          70708
+flow=Background                                      60003
+flow=Background-TCP-Attempt                          56007
+flow=To-Background-CVUT-Proxy                        23886
+flow=Background-Attempt-cmpgw-CVUT                    8030
+flow=To-Background-CVUT-WebServer                     7235
+flow=Background-UDP-NTP-Established-1                 6728
+botnet                                                6123
+flow=To-Background-MatLab-Server                      2632
+flow=From-Background-CVUT-Proxy                        799
+flow=Background-google-pop                             722
+flow=Background-google-webmail                         662
+flow=Background-google-analytics5                      506
+flow=Background-google-analytics6                      470
+flow=Background-google-analytics11                     442
+flow=Background-google-analytics3                      429
+flow=Background-google-analytics14                     428
+flow=Background-google-analytics16                     426
+flow=Background-google-analytics7                      426
+flow=Background-google-analytics13                     425
+flow=Background-google-analytics8                      424
+flow=Background-google-analytics4                      418
+flow=Background-google-analytics9                      406
+flow=Background-google-analytics1                      398
+flow=Background-google-analytics15                     385
+flow=Background-google-analytics10                     366
+flow=Background-google-analytics2                      356
+flow=Background-google-analytics12                     352
+flow=To-Normal-V49-UDP-NTP-server                      182
+flow=To-Background-Grill                               174
+flow=Background-ajax.google                            164
+flow=To-Background-Stribrek                            107
+flow=Background-www.fel.cvut.cz                         73
+flow=From-Normal-V49-UDP-CVUT-DNS-Server                46
+flow=To-Background-Jist                                 25
+flow=From-Normal-V49-MatLab-Server                      19
+flow=From-Botnet-V49-TCP-Established-HTTP-Ad-40          3
+flow=Normal-V49-HTTP-windowsupdate                       1
+flow=From-Botnet-V49-ICMP                                1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

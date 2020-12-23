@@ -1,0 +1,8 @@
+    Dur Proto Dir State sTos dTos TotPkts TotBytes SrcBytes 
+  3.035879    tcp    ->   REQ     0              3        222          222
+  0.000000    tcp    ->   REQ     0              1         74           74
+  0.000000    tcp    ->   REQ     0              1         74           74
+  0.000330    arp   who   CON                    2        102           42
+  0.000000    tcp    ->   REQ     0              1         74           74
+  0.000000    tcp    ->   REQ     0              1         74           74
+  0.000425    arp   who   CON                    2        102           42
